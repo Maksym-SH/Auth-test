@@ -11,12 +11,12 @@
         alt=""
       />
     </div>
-    <div class="text-white text-base text-center leading-24 -mb-20">
+    <article class="text-white text-base text-center leading-24 -mb-20">
       <h2 class="font-bold">
         {{ title }}
       </h2>
       <p class="text-md">{{ subtitle }}</p>
-    </div>
+    </article>
   </div>
 </template>
 

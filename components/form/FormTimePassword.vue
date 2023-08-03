@@ -16,7 +16,7 @@
         @click="submitHandler"
         class="w-form mx-auto mt-15"
         title="Submit"
-        :disabled="!code && !email"
+        :disabled="buttonDisabled"
       />
     </form>
   </div>
@@ -36,6 +36,10 @@ const refs = ref([]);
 const code = ref("");
 
 const enteredCode = ref(["", "", "", "", "", ""]);
+
+const buttonDisabled = computed(() => {
+  return code.value.length < 6 && !props.email;
+});
 
 const submitHandler = () => {
   emit("submit-form", code);

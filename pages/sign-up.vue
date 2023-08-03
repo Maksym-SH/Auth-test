@@ -39,7 +39,7 @@ useHead({
 const { email, password, repeatedPassword, username, accept } = storeToRefs(useAuthStore());
 
 const signUp = () => {
-  useRouter().push("/otp");
+  useRouter().push("/otp"); // After valid form redirect to "one time password" page.
 };
 
 const showedWarningMessage = ref(false);

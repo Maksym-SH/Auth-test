@@ -41,6 +41,8 @@ const navigateToPrevious = () => {
     useRouter().go(-1);
 
     password.value = repeatedPassword.value = "";
+  } else {
+    useRouter().push("/sign-up");
   }
 };
 

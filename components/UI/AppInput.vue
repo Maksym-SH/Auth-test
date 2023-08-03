@@ -102,7 +102,7 @@ defineExpose({
       height: 64px;
       padding: 0 0.65em;
       font-size: 32px;
-      color: $disabled;
+      color: $cyan;
       &::placeholder {
         padding-left: 2px;
       }

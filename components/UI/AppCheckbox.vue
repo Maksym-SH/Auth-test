@@ -31,7 +31,7 @@ const emit = defineEmits(["update:model-value"]);
 .checkbox {
   #accept:checked {
     & ~ .checkbox__replace {
-      background: $disabled url("/images/icons/caret.svg");
+      background: $cyan url("/images/icons/caret.svg");
     }
   }
 
@@ -42,7 +42,7 @@ const emit = defineEmits(["update:model-value"]);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    border: 2px solid $disabled;
+    border: 2px solid $cyan;
     border-radius: 4px;
   }
 }

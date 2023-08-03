@@ -13,11 +13,7 @@ export default defineNuxtConfig({
       requestUrl: "https://dummyjson.com",
     },
   },
-  css: [
-    "~/assets/scss/tailwind.scss",
-    "~/assets/scss/reset.scss",
-    "~/assets/scss/global.scss",
-  ],
+  css: ["~/assets/scss/tailwind.scss", "~/assets/scss/reset.scss"],
   pinia: {
     autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
   },
